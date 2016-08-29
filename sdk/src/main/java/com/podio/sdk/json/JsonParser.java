@@ -6,6 +6,7 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.JsonSyntaxException;
 import com.podio.sdk.domain.DataReference;
+import com.podio.sdk.domain.Profile;
 import com.podio.sdk.domain.TaskAction;
 import com.podio.sdk.domain.field.Field;
 import com.podio.sdk.domain.notification.Notification;
@@ -27,6 +28,7 @@ public class JsonParser {
             .registerTypeAdapter(TaskAction.class, new TaskActionDeserializerSerializer())
             .registerTypeAdapter(ReferenceGroup.class, new ReferenceGroupDeserializerSerializer())
             .registerTypeAdapter(DataReference.class, new DataReferenceDeserializer())
+            .registerTypeAdapter(Profile.class, new ProfileDeserializerSerializer())
             .disableHtmlEscaping()
             .create();
 
