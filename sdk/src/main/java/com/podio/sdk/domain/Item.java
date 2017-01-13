@@ -258,6 +258,8 @@ public class Item implements Data {
     private final LinkedAccountData linked_account_data = null;
     private final Reminder reminder = null;
     private final Recurrence recurrence = null;
+    private final String sharefile_vault_folder_id = null;
+    private final String sharefile_vault_folder_url = null;
 
     // These attributes are defined in the API source code,
     // but not supported by the SDK right now.
@@ -722,6 +724,14 @@ public class Item implements Data {
      */
     public EventContext.UserRatings getUserRatings() {
         return user_ratings;
+    }
+
+    public String getSharefile_vault_folder_id() {
+        return sharefile_vault_folder_id;
+    }
+
+    public String getSharefile_vault_folder_url() {
+        return sharefile_vault_folder_url;
     }
 
     /**
