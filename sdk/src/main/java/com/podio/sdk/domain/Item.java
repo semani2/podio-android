@@ -259,7 +259,7 @@ public class Item implements Data {
     private final Reminder reminder = null;
     private final Recurrence recurrence = null;
     private final String sharefile_vault_folder_id = null;
-    private final String sharefile_vault_folder_url = null;
+    private final String sharefile_vault_url = null;
 
     // These attributes are defined in the API source code,
     // but not supported by the SDK right now.
@@ -730,8 +730,8 @@ public class Item implements Data {
         return sharefile_vault_folder_id;
     }
 
-    public String getSharefile_vault_folder_url() {
-        return sharefile_vault_folder_url;
+    public String getSharefile_vault_url() {
+        return sharefile_vault_url;
     }
 
     /**
