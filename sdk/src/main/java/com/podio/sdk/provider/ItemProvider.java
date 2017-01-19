@@ -51,6 +51,11 @@ public class ItemProvider extends Provider {
             return this;
         }
 
+        Path withSFVault() {
+            addQueryParameter("sharefile_synchronous", "true");
+            return this;
+        }
+
     }
 
     /**
